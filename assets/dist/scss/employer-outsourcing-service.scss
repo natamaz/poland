@@ -1,0 +1,614 @@
+header{
+    background: #ecf1f4;
+}
+
+.bread-crumbs{
+    display: none;
+}
+
+.outsourcing-service{
+    padding: 22px 0 41px;
+    h2{
+        color: #343434;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 -10px 24px;
+    }
+    .outsourcing-content{
+        .img{
+            width: 100%;
+            height: 177px;
+            margin-bottom: 16px;
+        }
+        .text{
+            p{
+                color: #343434;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                padding-bottom: 13px;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.agency{
+    padding: 35px 0 45px;
+    background: #ebf1f4;
+    h2{
+        color: #343434;
+        font-size: 22px;
+        padding: 0 10px;
+        font-weight: 400;
+        margin: 0 0 25px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .agency-content{
+        img{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        .text{
+            p{
+                color: #474747;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                padding-bottom: 23px;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.other-principles{
+    padding: 38px 0 39px;
+    h3{
+        color: #343434;
+        font-size: 22px;
+        padding: 0 10px;
+        font-weight: 400;
+        margin: 0 0 38px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .principles-items{
+        .principles-item{
+            position: relative;
+            border-radius: 15px;
+            margin-bottom: 19px;
+            border: 1px solid #dddddd;
+            background-color: #f7f9fa;
+            padding: 17px 15px 21px 14px;
+            box-shadow: -29px 32px 49px rgba(215, 213, 213, 0.42);
+            &:last-child{
+                margin-bottom: 0;
+            }
+            i {
+                font-size: 38px;
+                color: #353539;
+                margin-left: 12px;
+                position: relative;
+                margin-bottom: 9px;
+                display: inline-block;
+                &::before{
+                    z-index: 1;
+                    position: relative;
+                }
+                &::after {
+                    content: '';
+                    top: 6px;
+                    z-index: 0;
+                    left: -12px;
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background-color: #9cd47b;
+                }
+            }
+            p{
+                color: #474747;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+.not-possible{
+    padding: 36px 0 43px;
+    background: #ebf1f4;
+    h2{
+        color: #343434;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0 0 28px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .not-possible-content{
+        .img{
+            width: 100%;
+            height: 142px;
+            margin-bottom: 18px;
+        }
+        .text{
+            p{
+                color: #474747;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+.hiring-calculator{
+    text-align: center;
+    position: relative;
+    padding: 36px 0 40px;
+    &::after{
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url('../img/hiring-calculator-after.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+    h2{
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0 0 17px;
+        line-height: 26px;
+        text-align: center;
+    }
+    p{
+        color: #ffffff;
+        font-size: 15px;
+        padding: 0 10px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 21px;
+    }
+    a{
+        color: #2e2a2a;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 11px 46px;
+        border-radius: 3px;
+        display: inline-block;
+        background-color: #9cd47b;
+        border: 1px solid #9cd47b;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        &:hover{
+            color: #9cd47b;
+            background-color: transparent;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .bread-crumbs{
+        display: block;
+        padding: 23px 0 6px;
+        li{
+            position: relative;
+            padding-right: 8px;
+            vertical-align: top;
+            display: inline-block;
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            &::after{
+                content: '/';
+                top: 0;
+                right: 0;
+                color: #898989;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                position: absolute;
+            }
+            a{
+                color: #898989;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                display: inline-block;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                &:hover{
+                    color: #4d7fee;
+                }
+            }
+            span{
+                color: #898989;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .outsourcing-service {
+        padding: 0 0 40px;
+        .outsourcing-content{
+            .img{
+                height: 277px;
+            }
+        }
+    }
+
+    .agency {
+        padding: 40px 0 40px;
+    }
+
+    .other-principles {
+        padding: 40px 0 40px;
+        .principles-items {
+            .principles-item {
+                padding: 17px 20px 16px 80px;
+                i{
+                    top: 50%;
+                    margin: 0;
+                    left: 26px;
+                    position: absolute;
+                    -webkit-transform: translate(0, -50%);
+                    -moz-transform: translate(0, -50%);
+                    -ms-transform: translate(0, -50%);
+                    -o-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+    }
+
+    .not-possible {
+        padding: 40px 0 40px;
+        .not-possible-content {
+            .img {
+                width: 100%;
+                height: 242px;
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    .hiring-calculator {
+        padding: 40px 0 40px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .outsourcing-service {
+        h2 {
+            padding: 0 80px;
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 33px;
+        }
+        .outsourcing-content{
+            position: relative;
+            .img{
+                top: 0;
+                left: 0;
+                width: 50%;
+                z-index: 0;
+                position: absolute;
+            }
+            .text{
+                z-index: 1;
+                width: 65%;
+                float: right;
+                padding: 15px;
+                margin-top: 30px;
+                position: relative;
+                border-radius: 15px;
+                background-color: #ffffff;
+                box-shadow: 0 8px 18px rgba(68, 68, 68, 0.16);
+                p{
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .agency {
+        padding: 50px 0 50px;
+        h2 {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 33px;
+        }
+        .agency-content {
+            img {
+                width: 48%;
+                float: right;
+                margin-bottom: 0;
+            }
+            .text{
+                width: 48%;
+                float: left;
+            }
+        }
+    }
+
+    .other-principles {
+        padding: 50px 0 50px;
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+        .principles-items {
+            .principles-item {
+                width: 49%;
+                float: left;
+                display: flex;
+                align-items: center;
+                &:nth-child(even){
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .not-possible {
+        padding: 50px 0 50px;
+        h2 {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 33px;
+        }
+        .not-possible-content{
+            position: relative;
+            padding: 30px 0 30px;
+            .img{
+                top: 0;
+                right: 0;
+                margin: 0;
+                width: 50%;
+                z-index: 0;
+                height: 100%;
+                position: absolute;
+            }
+            .text{
+                z-index: 1;
+                width: 65%;
+                float: left;
+                padding: 15px;
+                position: relative;
+                border-radius: 15px;
+                background-color: #ffffff;
+                box-shadow: 0 8px 18px rgba(68, 68, 68, 0.16);
+                p{
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .hiring-calculator {
+        padding: 50px 0 50px;
+        h2 {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .outsourcing-service {
+        padding: 0 0 58px;
+        h2 {
+            font-size: 32px;
+            padding: 0 160px;
+            line-height: 36px;
+        }
+        .outsourcing-content {
+            .img {
+                height: 300px;
+            }
+            .text {
+                width: 60%;
+                padding: 34px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .agency {
+        padding: 60px 0 60px;
+        h2 {
+            font-size: 32px;
+            padding: 0 120px;
+            line-height: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .other-principles {
+        padding: 60px 0 60px;
+        h3 {
+            font-size: 26px;
+            padding: 0 120px;
+            line-height: 32px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .not-possible{
+        padding: 60px 0 60px;
+        h2 {
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 50px;
+        }
+        .not-possible-content {
+            .img {
+                height: 100%;
+            }
+            .text {
+                width: 60%;
+                padding: 34px;
+            }
+        }
+    }
+
+    .hiring-calculator{
+        padding: 60px 0 60px;
+        h2 {
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 30px;
+        }
+        p{
+            padding: 0 100px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1340px) {
+
+    .outsourcing-service {
+        padding: 0 0 78px;
+        h2 {
+            font-size: 41px;
+            line-height: 50px;
+            margin-bottom: 41px;
+        }
+        .outsourcing-content {
+            .img {
+                width: 48%;
+                height: 365px;
+            }
+            .text {
+                width: 60.5%;
+                margin-top: 38px;
+                padding: 34px 33px 39px 37px;
+                p {
+                    line-height: 30px;
+                    padding-bottom: 31px;
+                }
+            }
+        }
+    }
+
+    .agency {
+        padding: 70px 0 81px;
+        h2 {
+            font-size: 41px;
+            line-height: 50px;
+            margin-bottom: 71px;
+        }
+        .agency-content{
+            img {
+                width: 48.5%;
+                margin-top: 3px;
+            }
+            .text {
+                p {
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .other-principles {
+        padding: 65px 0 68px;
+        h3 {
+            font-size: 30px;
+            padding: 0 260px;
+            line-height: 38px;
+            margin-bottom: 49px;
+        }
+        .principles-items {
+            .principles-item {
+                width: 49.5%;
+                margin-bottom: 10px;
+                padding: 23px 25px 25px 77px;
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .not-possible {
+        padding: 76px 0 95px;
+        h2 {
+            font-size: 41px;
+            line-height: 50px;
+            margin-bottom: 79px;
+        }
+        .not-possible-content {
+            padding: 30px 0 44px;
+            .img {
+                width: 48.2%;
+                margin-right: 7px;
+            }
+            .text{
+                width: 52.3%;
+                padding: 34px 25px 42px 26px;
+                p {
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .hiring-calculator {
+        padding: 70px 0 79px;
+        h2 {
+            font-size: 41px;
+            line-height: 50px;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            padding: 0 160px;
+            line-height: 23px;
+            margin-bottom: 52px;
+        }
+        a{
+            padding: 15px 61px;
+        }
+    }
+
+}
+

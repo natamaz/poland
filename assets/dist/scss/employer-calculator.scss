@@ -1,0 +1,790 @@
+@import "libs/rangeslider";
+
+header{
+    background: #ecf1f4;
+}
+
+.bread-crumbs{
+    display: none;
+}
+
+.handle{
+    color: red;
+}
+
+.employer-calculator-one{
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    padding: 22px 0 40px;
+    h2{
+        color: #343434;
+        padding: 0 13px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    .calculator-content{
+        position: relative;
+        .video{
+            height: 185px;
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: 0 12px 32px 1px rgba(84, 84, 84, 0.28);
+            .video-play{
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+                width: 42px;
+                height: 42px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: #4d7fee;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                &::after{
+                    content: '';
+                    top: 50%;
+                    left: 54%;
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    border-top: 9px solid transparent;
+                    border-left: 16px solid #ffffff;
+                    border-bottom: 9px solid transparent;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+.employer-calculator-one {
+    .rangeslider__fill {
+        background: none;
+    }
+    .rangeslider--horizontal {
+        height: 3px !important;
+        background-color: #d8e1e5 !important;
+        border: 0 !important;
+    }
+    .rangeslider__handle {
+        display: block;
+        position: absolute; 
+        background-color: #6f8cec !important;
+        box-shadow: 
+        0px 0px 1px 4px   #BDCAF6 inset;
+        top: 50%; 
+        left: 0;
+        border-radius: 50%;
+        width: 15px;
+        margin-top: -7px;
+        height: 15px;
+        &:after {
+            content: none;
+        }
+        border: none !important;
+        span {
+            top: -28px;
+            position: absolute;
+            font-size: 18px;
+            line-height: 24px;
+            color: #373737;
+        }
+    }
+    .pol{
+        margin-bottom: 30px;
+        p{
+            color: #373737;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            position: relative;
+            margin-bottom: 25px;
+            padding: 0 0 0 29px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a{
+                color: #373737;
+                text-decoration: underline;
+            }
+            .jcf-checkbox{
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+                position: absolute;
+                background-color: #e8eaf0;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                input{
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    position: absolute;
+                }
+                span{
+                    top: 50%;
+                    left: 50%;
+                    opacity: 0;
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    background: url('../img/check-mark2.png');
+                    background-size: cover;
+                    -webkit-transform: translate(-50%, -50%);
+                    -moz-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    -o-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    -ms-transition: all 0.5s;
+                    -o-transition: all 0.5s;
+                    transition: all 0.5s;
+                }
+            }
+            .jcf-checkbox.jcf-checked{
+                span{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .calculator-content {
+        .for-video-block {
+            margin-bottom: 30px;
+            p {
+                font-size: 16px;
+                color: #89929a;
+            }
+            @media screen and (min-width: 1024px) {
+                position: absolute;
+                top: 221px;
+                right: 131px;
+                margin-bottom: 0;
+            }
+        }
+        .bot-info-after {
+            padding-top: 39px;
+            padding-bottom: 40px;
+            width: 295px;
+            max-width: 100%;
+            @media screen and (min-width: 1024px) {
+                position: absolute;
+                top: 283px;
+                right: 0;
+            }
+            
+            h4 {
+                font-size: 14px;
+                color: #797979;
+                text-align: center;
+                    span {
+                        color: #373737;
+                        font-size: 15px;
+                    }
+            }
+            .netto {
+                text-align: center;
+                border: 1px solid #c5c5c5;
+                background-color: #f7f9fa;
+                width: 291px;
+                height: 43px;
+                line-height: 43px;
+                text-align: center;
+                margin-top: 11px;
+                font-size: 16px;
+                color: #89929a;
+                @media screen and (min-width: 1024px) {
+                    width: 83px;
+                    height: 60px;
+                    border-radius: 3px;
+                    line-height: 60px;
+                }
+            }
+            div {
+                margin-top: 19px;
+                text-align: left;
+                box-shadow: -29px 32px 49px rgba(52, 107, 229, 0.14);
+                border-radius: 5px;
+                background-color: #4d7fee;
+                padding: 28px 31px 28px 22px;
+                max-width: 290px;
+                p {
+                    color: #ffffff;
+                    font-size: 16px;
+                }
+                    .info-money {
+                        line-height: 24px;
+                        &:nth-child(1){
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .last-money {
+                        text-decoration: line-through;
+                        font-size: 18px;
+                        margin-top: 12px;
+                    }
+                    .money {
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                        margin-top: 10px;
+                    }
+            }
+        }
+        form {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 820px;
+            max-width: 100%;
+            button {
+                border-radius: 5px;
+                background-color: #4d7fee;
+                width: 400px;
+                max-width: 100%;
+                height: 43px;
+                line-height: 43px;
+                font-size: 16px;
+                color: #ffffff;
+                border: 0;
+            }
+                .items-textarea {
+                    width: 820px;
+                    max-width: 100%;
+                    .textarea {
+                        width: 820px;
+                        max-width: 100%;
+                        label {
+                            margin-bottom: 19px;
+                            display: block;
+                        }
+                        textarea {
+                            width: 100%;
+                            border: 1px solid #c6c6c6;
+                            background-color: #f7f9fa;
+                            border-radius: 3px;
+                            font-size: 16px;
+                            color: #89929a;
+                            padding: 14px 18px 15px;
+                            height: 160px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+                .items {
+                    width: 400px;
+                    max-width: 100%;
+                    .headline-label {
+                        margin-bottom: 15px !important;
+                    }
+                    @media screen and (min-width: 1340px) {
+                        &:nth-child(11){
+                            .item {
+                                &:nth-child(2){
+                                    padding-top: 62px;
+                                }
+                            } 
+                        }
+                        &:nth-child(18){
+                            .item {
+                                &:nth-child(2){
+                                    padding-top: 19px;
+                                }
+                            } 
+                        }
+                    }
+                    &:nth-child(1){
+                        width: 819px;
+                        max-width: 100%;
+                        .jcf-select { 
+                            width: 400px !important;
+                            max-width: 100%;
+                        }
+                    }
+                    &:nth-child(4){
+                        .text {
+                            display: none;
+                        }
+                        @media screen and (min-width: 1920px) {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 818px;
+                            max-width: 100%;
+                            input[type=text] {
+                                width: 400px;
+                                max-width: 100%;
+                            }
+                            .text {
+                                display: block;
+                                box-shadow: 0 4px 10px 1px rgba(56, 56, 56, 0.14);
+                                border-radius: 5px;
+                                background-color: #ecf1f4;
+                                padding: 20px;
+                                width: 477px;
+                                max-width: 100%;
+                                margin-right: -120px;
+                            }
+                        }
+                    }
+                    &:nth-child(7){
+                        width: 820px;
+                        max-width: 100%;
+                    }
+                    &:nth-child(12){
+                        width: 820px;
+                        max-width: 100%;
+                    }
+                    .file {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        padding-bottom: 8px;
+                        .file-item {
+                            width: 137px;
+                            height: 105px;
+                            @media screen and (min-width: 1024px) {
+                                width: 85px;
+                                height: 65px;
+                            }
+                            position: relative;
+                            display: block;
+                            border: 1px dashed #e6e8eb;
+                            background-color: #f7f9fa;
+                            margin-bottom: 22px;
+                                &:after {
+                                    content: url('../img/img-for-inputTypeFile.png');
+                                    position: absolute;
+                                    width: 35px;
+                                    height: 34px;
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    z-index: 1;
+                                }
+                            .jcf-real-element {
+                                position: absolute;
+                                width: 35px;
+                                height: 34px;
+                                display: block;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                    .item-radio {
+                        .all-radio {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-bottom: 28px;
+                            padding-top: 5px;
+                                .radio {
+                                    &:nth-child(1){
+                                        margin-right: 54px;
+                                    }
+                                    display: flex;
+                                    align-items: center;
+                                    position: relative;
+                                    .jcf-unchecked {
+                                        span {
+                                            position: relative;
+                                            &:before {
+                                                content: '';
+                                                display: block;
+                                                position: absolute; 
+                                                top: 50%; left: 0;
+                                                width: 15px;
+                                                height: 15px;
+                                                background-color: #7c7c7c;
+                                                border-radius: 50%;
+                                                left: -18px;
+                                                margin-top: -7px;
+                                                box-shadow: 
+                                                  0px 0px 1px 4px #c5c5c5 inset;
+                                            }
+                                        }
+                                    }
+                                    .jcf-checked {
+                                        span {
+                                            position: relative;
+                                            &:before {
+                                                content: '';
+                                                display: block;
+                                                position: absolute; 
+                                                background-color: #6f8cec;
+                                                box-shadow: 
+                                                0px 0px 1px 4px   #BDCAF6 inset;
+                                                  top: 50%; left: 0;
+                                                  border-radius: 50%;
+                                                  left: -18px;
+                                                width: 15px;
+                                                margin-top: -7px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                        }
+                    }
+                    .item-any {
+                        margin-bottom: 30px;
+                        div {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                                div {
+                                    span {
+                                        font-size: 16px;
+                                        color: #808080;
+                                        margin-right: 7px;
+                                    }
+                                    input {
+                                        width: 83px;
+                                        text-align: center;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                        }
+                    } 
+                    .item {
+                        p {
+                            font-size: 14px;
+                            color: #a1a1a1;
+                        }
+                        label {
+                            font-size: 16px;
+                            color: #373737;
+                            display: inline-block;
+                            margin-bottom: 15px;
+                        }
+                        input {
+                            margin-bottom: 30px;
+                            display: block;
+                            width: 100%;
+                            border: 1px solid #c6c6c6;
+                            background-color: #f7f9fa;
+                            padding: 14px 18px 15px;
+                            font-size: 16px;
+                            color: #89929a;
+                            border-radius: 3px;
+                            max-height: 42px;
+                        }
+                        .jcf-select {
+                            margin-bottom: 30px;
+                            display: block;
+                            width: 100%;
+                            border: 1px solid #c6c6c6;
+                            background-color: #f7f9fa;
+                            padding: 14px 18px 15px 13px;
+                            border-radius: 3px;
+                            max-height: 42px;
+                            position: relative;
+                            span {
+                                font-size: 16px;
+                                color: #89929a;
+                            }
+                            &:after {
+                                content: url('../img/select-opener.png');
+                                display: inline-block;
+                                position: absolute;
+                                right: 18px;
+                                line-height: 14px;
+                                width: 13px;
+                                height: 7px;
+                            }
+                        }
+                        .jcf-list-content {
+                            position: relative;
+                            z-index: 10;
+                            ul {
+                                position: relative;
+                                z-index: 200;
+                                border: 1px solid #c6c6c6;
+                                background-color: #f7f9fa;
+                                    li {
+                                        padding: 14px 18px 15px 13px;
+                                    }
+                            }
+                        }
+                        .range {
+                            margin-bottom: 35px;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .bread-crumbs{
+        display: block;
+        padding: 23px 0 6px;
+        li{
+            position: relative;
+            padding-right: 8px;
+            vertical-align: top;
+            display: inline-block;
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            &::after{
+                content: '/';
+                top: 0;
+                right: 0;
+                color: #898989;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                position: absolute;
+            }
+            a{
+                color: #898989;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                display: inline-block;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                &:hover{
+                    color: #4d7fee;
+                }
+            }
+            span{
+                color: #898989;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .employer-calculator-one {
+        .calculator-content {
+            .video {
+                height: 285px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .employer-calculator-one {
+        .calculator-content {
+            form {
+                button {
+                    height: 60px;
+                    line-height: 60px;
+                }
+                .items-textarea {
+                    width: 820px;
+                    max-width: 100%;
+                    .textarea {
+                        textarea {
+                            width: 100%;
+                            height: 142px;
+                            margin-bottom: 35px;
+                        }
+                    }
+                }
+                .last-area {
+                    width: 820px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                        .item {
+                            width: 400px;
+                            max-width: 100%;
+                        }
+                }
+                    .items {
+                        &:nth-child(24){
+                            .item-radio {
+                                &:nth-child(1){
+                                    position: relative;
+                                    p {
+                                        position: absolute;
+                                        bottom: 24px;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    max-width: 576px;
+                                    width: 576px;
+                                }
+                                &:last-child {
+                                    max-width: 576px;
+                                    width: 576px;
+                                }
+                                &:nth-child(9){
+                                    position: relative;
+                                    p {
+                                        position: absolute;
+                                        bottom: 24px;
+                                    }
+                                }
+                            }
+                        }
+                        .item-radio {
+                            display: flex;
+                            align-items: center;
+                            width: 400px;
+                            max-width: 100%;
+                            justify-content: space-between;
+                            padding-bottom: 43px;
+                            padding-top: 12px;
+                            label {
+                                margin-bottom: 0;
+                            }
+                            .radio-items {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 400px;
+                                max-width: 100%;
+                                    label {
+                                        margin-bottom: 0;
+                                    }
+                            }
+                            .all-radio {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding-bottom: 0;
+                                padding-top: 0;
+                                    .radio {
+                                        &:nth-child(1){
+                                            margin-right: 54px;
+                                        }
+                                        display: flex;
+                                        align-items: center;
+                                    }
+
+                            }
+                        }
+                        &:nth-child(10){
+                            .item {
+                                display: block;
+                            }
+                        }
+                        .item {
+                            input {
+                                padding: 22px 24px 23px;
+                                max-height: 60px;
+                            }
+                            .jcf-select {
+                                padding: 20px 24px 20px;
+                                max-height: 60px;
+                            }
+                            .jcf-list-content {
+                                position: relative;
+                                z-index: 10;
+                                ul {
+                                    border: 1px solid #c6c6c6;
+                                    background-color: #f7f9fa;
+                                        li {
+                                            padding: 14px 18px 15px 13px;
+                                        }
+                                }
+                            }
+                            .range {
+                                margin-bottom: 35px;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+    .employer-calculator-one {
+        overflow: hidden;
+        padding: 0 0 40px;
+        h2 {
+            padding: 0 80px;
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 25px;
+        }
+        .calculator-content {
+            padding-right: 344px;
+            .video{
+                right: 0;
+                top: 15px;
+                margin: 0;
+                width: 294px;
+                height: 189px;
+                position: absolute;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .employer-calculator-one {
+        padding: 0 0 60px;
+        h2 {
+            font-size: 32px;
+            padding: 0 160px;
+            line-height: 36px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1340px) {
+
+    .employer-calculator-one {
+        padding: 0 0 80px;
+        h2 {
+            font-size: 41px;
+            line-height: 50px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1640px) {
+
+
+
+}
