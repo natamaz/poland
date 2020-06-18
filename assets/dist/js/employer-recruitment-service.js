@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    if($(window).width() >= 768){
+    if ($(window).width() >= 768) {
 
         $('.why-worth-item p').matchHeight({
             byRow: true
@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     }
 
-    $( ".faq-accordion" ).accordion({
+    $(".faq-accordion").accordion({
         collapsible: true,
         heightStyle: "content"
     });
@@ -21,9 +21,9 @@ $(document).ready(function(){
         slidesToScroll: 1,
     });
 
-    if($(window).width() >= 1024){
+    if ($(window).width() >= 1024) {
 
-        $('.step-slider').slick('unslick');   
+        $('.step-slider').slick('unslick');
 
     }
 
@@ -36,5 +36,3 @@ $(document).ready(function(){
     });
 
 });
-
-
