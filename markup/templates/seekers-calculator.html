@@ -32,19 +32,36 @@
                 </nav>
                 <div class="personal-languages">
                     <ul class="languages">
-                        <li><span>RU</span></li>
+                        <li class="dropdown">
+                            <span>UA</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/languages-img1.png" alt="">Ukr</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/languages-img2.png" alt="">Rus</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/languages-img3.png" alt="">Deu</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/languages-img4.png" alt="">Pol</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                    <a class="personal" href="javascript:void(0)"><i class="icon-man-user"></i><span>Иван Иванов</span></a>
+                    <!--                <a class="personal" href="javascript:void(0)"><i class="icon-man-user"></i><span>Иван Иванов</span></a>-->
                 </div>
             </div>
         </div>
     </header>
 
+
     <div class="video-popup">
         <span class="close"></span>
         <div class="video-content">
             <span class="close-popup"></span>
-            <iframe src="https://www.youtube.com/embed/7-gnx4HZ6F0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -169,11 +186,7 @@
                                 <option>Выберете вариант</option>
                                 <option>Выберете вариант</option>
                             </select>
-                            <p>* такие работники стоят меньше
-                                * предложения только для больших проектов
-                                (для заказа большого количества работников
-                                так на месте мы трудоустраиваем
-                                дополнительно за наш счёт переводчика)
+                            <p>* такие работники стоят меньше * предложения только для больших проектов (для заказа большого количества работников так на месте мы трудоустраиваем дополнительно за наш счёт переводчика)
                             </p>
                         </div>
                     </div>
@@ -389,9 +402,8 @@
                         <div class="item item-button">
                             <button class="verifed">Расчитать</button>
                         </div>
-                        <p>* Представленные в калькуляторе найма сотрудников, размещенном на сайте ООО Restart Time Group .. расчеты, результаты и другие виды информации представляют собой только симуляцию с учетом
-                            указанное вами в добровольном порядке параметры и не является офертой
-                            согласно Ст. 66 статьи 1 Гражданского Кодекса.
+                        <p>* Представленные в калькуляторе найма сотрудников, размещенном на сайте ООО Restart Time Group .. расчеты, результаты и другие виды информации представляют собой только симуляцию с учетом указанное вами в добровольном порядке параметры
+                            и не является офертой согласно Ст. 66 статьи 1 Гражданского Кодекса.
                         </p>
                         <h5>Стоимость 1 работы работника в обычный час: 19.95 злотых нетто + 23% НДС </h5>
                         <h5>*Это примерная стоимость. После получения информации с этого калькулятора Вам будет предоставлен точной и подробный расчет за сотрудника и проект.</h5>
@@ -428,12 +440,11 @@
                         </div>
                     </div>
                     <div class="pol">
-                        <p><input type="checkbox" checked>- Я выражаю свое <a href="javascript:void()">согласие на обработку указанных персональных данных</a> в целях телефонного
-                            предоставления продуктов и услуг через Restart Time Group (RTG) в соответствии с информацией в Правилах
-                            Сайта. Имею право отозвать согласие в любое время, однако без влияния на соответствие обработки, которое
-                            имело место до вывода согласие.</p>
-                        <p><input type="checkbox">- Я ознакомлен, что с целью улучшения качества обслуживания все разговоры с
-                            сотрудниками компании Restart Time Group (RTG) записывается на что и даю согласие.</p>
+                        <p>
+                            <input type="checkbox" checked>- Я выражаю свое <a href="javascript:void()">согласие на обработку указанных персональных данных</a> в целях телефонного предоставления продуктов и услуг через Restart Time Group (RTG) в соответствии с информацией в Правилах
+                            Сайта. Имею право отозвать согласие в любое время, однако без влияния на соответствие обработки, которое имело место до вывода согласие.</p>
+                        <p>
+                            <input type="checkbox">- Я ознакомлен, что с целью улучшения качества обслуживания все разговоры с сотрудниками компании Restart Time Group (RTG) записывается на что и даю согласие.</p>
                     </div>
                     <div class="items clearfix items-but">
                         <div class="item">
@@ -455,11 +466,7 @@
                     <h4>Нетто<span>(Столько получет от Вас работник)</span></h4>
                     <p class="netto">15,8</p>
                     <div>
-                        <p class="info-money">Рассчет ориентировочно,
-                            сколько вы потратите на наем
-                            работников с Украины
-                            от нашего агентства по
-                            трудоустройству
+                        <p class="info-money">Рассчет ориентировочно, сколько вы потратите на наем работников с Украины от нашего агентства по трудоустройству
                         </p>
                         <p class="last-money">25,8 PLN</p>
                         <p class="info-money">за 1 час работы работника</p>
@@ -523,8 +530,12 @@
                             <a class="complaints_js" href="javascript:void(0)">Написать</a>
                         </div>
                         <ul class="applications">
-                            <li><a href="javascript:void(0)"><img src="../img/applications1.png" alt=""></a></li>
-                            <li><a href="javascript:void(0)"><img src="../img/applications2.png" alt=""></a></li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../img/applications1.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../img/applications2.png" alt=""></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="reserved">

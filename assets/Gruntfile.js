@@ -90,7 +90,7 @@ grunt.initConfig({
 		grunt: { files: ['Gruntfile.js'], tasks: ['default'] },
 
 		sass: {
-			files: 'dist/scss/*.scss',
+			files: 'dist/scss/**/*.scss',
 			tasks: ['buildCss']
 		},
 
@@ -100,7 +100,7 @@ grunt.initConfig({
 		},
 
 		markup: {
-			files: '*.html',
+			files: '**/*.html',
 			tasks: ['htmlbuild']
 		}
 	},
