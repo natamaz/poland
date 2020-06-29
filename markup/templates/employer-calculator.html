@@ -82,136 +82,205 @@
         <div class="container">
             <h2>Калькулятор</h2>
             <div class="calculator-content">
-                <div class="video" style="background: url('../img/video-bg.png') no-repeat 50% 0; background-size: cover;">
-                    <span class="video-play"></span>
+                <div class="video">
+                    <!-- <span class="video-play"></span> -->
+                    <iframe src="https://www.youtube.com/embed/7-gnx4HZ6F0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 </div>
                 <div class="for-video-block">
                     <p>Видеоинструкция</p>
                     <p>как заполнить форму</p>
                 </div>
                 <form>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
-                            <label>Вы агенция или прямой работодатель?</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                            </select>
+                            <input type="text" placeholder="ИНН">
+                        </div>
+                        <div class="item">
+                            <input type="text" placeholder="Названия фирмы">
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
-                            <label>Работник будет трудоустроен непосредственно</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете тип трудоустройства</option>
-                                <option>Выберете тип трудоустройства</option>
-                                <option>Выберете тип трудоустройства</option>
-                                <option>Выберете тип трудоустройства</option>
-                                <option>Выберете тип трудоустройства</option>
-                                <option>Выберете тип трудоустройства</option>
-                            </select>
+                            <input type="text" placeholder="Город">
                         </div>
                         <div class="item">
-                            <label>Какой должности нужны сотрудники?</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете должность</option>
-                                <option>Выберете должность</option>
-                                <option>Выберете должность</option>
-                                <option>Выберете должность</option>
-                                <option>Выберете должность</option>
-                                <option>Выберете должность</option>
-                            </select>
+                            <input type="text" placeholder="Почтовый код">
                         </div>
                     </div>
-                    <div class="items clearfix">
-                        <div class="item">
-                            <label>Город</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете город</option>
-                                <option>Выберете город</option>
-                                <option>Выберете город</option>
-                                <option>Выберете город</option>
-                                <option>Выберете город</option>
-                                <option>Выберете город</option>
-                            </select>
+                    <div class="items clearfix last-area">
+                        <div class="item group">
+                            <input type="text" placeholder="Адрес">
+                            <input type="text" placeholder="Дом">
                         </div>
                         <div class="item">
-                            <label>Область в котором будут работать работники</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете область</option>
-                                <option>Выберете область</option>
-                                <option>Выберете область</option>
-                                <option>Выберете область</option>
-                                <option>Выберете область</option>
-                                <option>Выберете область</option>
-                            </select>
+                            <input type="text" placeholder="Email">
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
-                            <label>Почтовый код</label>
-                            <input type="text" placeholder="Введите код">
+                            <input type="text" placeholder="Телефон">
+                        </div>
+                        <div class="item">
+                            <input type="text" placeholder="ФИО">
+                        </div>
+                    </div>
+                    <div class="items clearfix last-area group">
+                        <div class="item">
+                            <label>Тип работы</label>
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>Выберете тип трудоустройства</option>
+                                <option>Выберете тип трудоустройства</option>
+                                <option>Выберете тип трудоустройства</option>
+                                <option>Выберете тип трудоустройства</option>
+                                <option>Выберете тип трудоустройства</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label>Должность сотрудника</label>
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>Выберете должность</option>
+                                <option>Выберете должность</option>
+                                <option>Выберете должность</option>
+                                <option>Выберете должность</option>
+                                <option>Выберете должность</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label>Минимальная ставка</label>
+                            <input type="text" disabled value="15">
+                        </div>
+                    </div>
+                    <div class="items clearfix last-area full-size">
+                        <div class="item full-size">
                             <label>Какую ставку Вы предлагаете для работника</label>
                             <div class="range range1">
                                 <input id="range" type="range" min="1" max="50" step="0.1" value="15.4">
                             </div>
-                        </div>
-                        <div class="text">
-                            <p>К сожалению, мы не готовы принять на регистрация Вашу вакансию. Мы работаем на рынке с 2013 года и следим за качеством услуг для работодателей. Мы тщательно анализируем рынок труда и понимаем сколько такой работник должен зарабатывать.
-                                По этому мы стараемся Вам помочь, подсказываю на какую ставку согласятся кандидаты, а это немаловажно так это таким образом сократиться время на подбор кандидатов и самое главное Вашего ожидания. Если Вы готовы платить
-                                рекомендованную ставку, просим указать для дальнейшей регистрации вакансии. </p>
+                            <div class="text">
+                                <!-- Что бы показать подсказку необходимо добавить класс active -->
+                                <p>К сожалению, мы не готовы принять на регистрация Вашу вакансию. Мы работаем на рынке с 2013 года и следим за качеством услуг для работодателей. Мы тщательно анализируем рынок труда и понимаем сколько такой работник должен
+                                    зарабатывать. По этому мы стараемся Вам помочь, подсказываю на какую ставку согласятся кандидаты, а это немаловажно так это таким образом сократиться время на подбор кандидатов и самое главное Вашего ожидания. Если
+                                    Вы готовы платить рекомендованную ставку, просим указать для дальнейшей регистрации вакансии. </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
-                            <label>Тип работника</label>
+                            <label>Тип договора</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете тип работника</option>
-                                <option>Выберете тип работника</option>
-                                <option>Выберете тип работника</option>
-                                <option>Выберете тип работника</option>
-                                <option>Выберете тип работника</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label>Тип квалификации работника?</label>
+                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>Квалифицированныйь</option>
+                                <option>Квалифицированный</option>
+                                <option>Квалифицированный</option>
+                                <option>Квалифицированный</option>
+                                <option>Квалифицированный</option>
+                                <option>Квалифицированный</option>
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix items-textarea">
+                    <div class="items clearfix items-textarea full-size">
                         <div class="textarea">
                             <label>Требования к должности</label>
                             <textarea placeholder="Введите текст"></textarea>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <span class="title">Фото или видео с работы</span>
+                    <div class="items clearfix last-area full-size">
                         <div class="file">
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Уровень знания языка</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -235,36 +304,27 @@
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item item-any">
                             <label>Возраст работников</label>
                             <div class="clearfix">
                                 <div>
                                     <span>от</span>
-                                    <input type="text" placeholder="18">
+                                    <input type="text" class="only_number" placeholder="18">
                                 </div>
                                 <div>
                                     <span>до</span>
-                                    <input type="text" placeholder="45">
+                                    <input type="text" class="only_number" placeholder="45">
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <label>Какое количество работников нужно</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете пол</option>
-                                <option>Выберете пол</option>
-                                <option>Выберете пол</option>
-                                <option>Выберете пол</option>
-                                <option>Выберете пол</option>
-                                <option>Выберете пол</option>
-                            </select>
+                            <input type="text" class="only_number" placeholder="Укажите кол-во работников">
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item item-radio">
-                            <label class="headline-label">На какой срок нужно работники</label>
-                            <input type="data" placeholder="Выберете дату">
                             <div class="radio-items">
                                 <label>Будет ли отбор с вокзала</label>
                                 <div class="all-radio">
@@ -279,19 +339,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="items clearfix last-area full-size">
                         <div class="item">
-                            <label>Приезд кандидатов непосредственно</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете</option>
-                                <option>Выберете</option>
-                                <option>Выберете</option>
-                                <option>Выберете</option>
-                                <option>Выберете</option>
-                                <option>Выберете</option>
-                            </select>
+                            <label>На какой срок нужно работники</label>
+                            <div class="date-picker">
+                                <div class="input">
+                                    <div class="result">Выберете дату </div>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="calendar"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Жилье</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -304,39 +365,95 @@
                             </select>
                         </div>
                         <div class="item">
-                            <label>Сумму</label>
-                            <input type="text" placeholder="Укажите сумму">
+                            <input type="text" class="only_number" placeholder="Укажите сумму">
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <span class="title">Фото или видео жилья</span>
+                    <div class="items clearfix last-area full-size">
                         <div class="file">
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="file-item">
-                                <input type="file">
+                                <div class="attached-foto">
+                                    <div class="files" id="files-images">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" name="file-1[]">
+                                        </div>
+                                        <span class="btn-brows-foto"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Условия проживания</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -349,42 +466,11 @@
                             </select>
                         </div>
                         <div class="item">
-                            <label>Условия для пар</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                            </select>
+                            <label>Город</label>
+                            <input type="text" placeholder="Город">
                         </div>
                     </div>
-                    <div class="items clearfix">
-                        <div class="item">
-                            <label>Работа в другом городе</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                            </select>
-                        </div>
-                        <div class="item">
-                            <label>Выберете город</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Доезд</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -397,6 +483,11 @@
                             </select>
                         </div>
                         <div class="item">
+                            <input type="text" class="only_number" placeholder="Укажите сумму">
+                        </div>
+                    </div>
+                    <div class="items clearfix last-area">
+                        <div class="item">
                             <label>Питание</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
                                 <option>Выберете вариант</option>
@@ -407,8 +498,11 @@
                                 <option>Выберете вариант</option>
                             </select>
                         </div>
+                        <div class="item">
+                            <input type="text" class="only_number" placeholder="Укажите сумму">
+                        </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Рабочей одеждой обеспечивает</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -432,24 +526,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix">
-                        <div class="item">
-                            <label>Тип договора, на котором будет трудоустроен работник</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
-                            </select>
-                        </div>
-                        <div class="item">
-                            <label>Какую ставку Вы предлагаете для работника чистыми на руки с вычетом налогов</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>В какие дни будут работать работники?</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -464,29 +541,23 @@
                         <div class="item">
                             <label>Сколько часов будут работать работники в день</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
+                                <option>Выберете вариант</option>
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Сколько часов будут работать работники в месяц</label>
-                            <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                                <option>Выберете часы</option>
-                            </select>
+                            <input type="text" class="only_number" placeholder="Укажите сумму">
+                            <span class="subscription">минимальное количество 200</span>
                         </div>
                         <div class="item">
-                            <label>Сколько часов будут работать работники в день</label>
+                            <label>Количество смен</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
                                 <option>Выберете вариант</option>
                                 <option>Выберете вариант</option>
@@ -497,9 +568,9 @@
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix ">
                         <div class="item">
-                            <label>На какой срок нужно работники</label>
+                            <label>Будут ли получать работники дополнительные оплату</label>
                             <div class="radio-items item-radio">
                                 <label>Сверхчасы</label>
                                 <div class="all-radio">
@@ -541,7 +612,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Сколько есть перерывов?</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -565,7 +636,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix">
+                    <div class="items clearfix last-area">
                         <div class="item">
                             <label>Оплачиваете больничные работникам?</label>
                             <select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
@@ -586,20 +657,21 @@
                                 <option>Выберете вариант</option>
                                 <option>Выберете вариант</option>
                                 <option>Выберете вариант</option>
-                                <option>Выберете вариант</option>
                             </select>
                         </div>
                     </div>
-                    <div class="items clearfix items-textarea">
+                    <div class="items clearfix items-textarea full-size">
                         <div class="textarea">
                             <label>Дополнительная информация</label>
                             <textarea placeholder="Введите текст"></textarea>
                         </div>
                     </div>
-                    <div class="items clearfix">
-                        <div class="item">
+                    <div class="items clearfix last-area">
+                        <div class="item full-size">
                             <div class="radio-items item-radio big-class">
-                                <label>Требуется от кандидата резюме</label>
+                                <label>Требуется от кандидата резюме <span class="hint">?</span></label>
+                                <span class="answer">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                    вэб-дизайне.</span>
                                 <div class="all-radio">
                                     <div class="radio">
                                         <input type="radio">
@@ -610,7 +682,6 @@
                                         <span>Нет</span>
                                     </div>
                                 </div>
-                                <p>* если да, сколько времени утверждается кандидат</p>
                             </div>
                             <div class="radio-items item-radio big-class">
                                 <label>Готовы ли Вы принимать работников со слабым слухом?</label>
@@ -642,33 +713,7 @@
                                 </div>
                             </div>
                             <div class="radio-items item-radio">
-                                <label>Wiza D05</label>
-                                <div class="all-radio">
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>Да</span>
-                                    </div>
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="radio-items item-radio">
-                                <label>Wiza D09</label>
-                                <div class="all-radio">
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>Да</span>
-                                    </div>
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="radio-items item-radio">
-                                <label>Wiza D06</label>
+                                <label>Wiza</label>
                                 <div class="all-radio">
                                     <div class="radio">
                                         <input type="radio">
@@ -694,20 +739,6 @@
                                 </div>
                             </div>
                             <div class="radio-items item-radio">
-                                <label>Karta polyaka</label>
-                                <div class="all-radio">
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>Да</span>
-                                    </div>
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>Нет</span>
-                                    </div>
-                                </div>
-                                <p>Виза на основании карты поляка</p>
-                            </div>
-                            <div class="radio-items item-radio">
                                 <label>Без документов</label>
                                 <div class="all-radio">
                                     <div class="radio">
@@ -720,49 +751,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="radio-items item-radio">
-                                <label>На сколько времени должна быть виза*</label>
-                                <div class="all-radio">
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>1-3 мес.</span>
-                                    </div>
-                                    <div class="radio">
-                                        <input type="radio">
-                                        <span>3-5 мес</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="items clearfix last-area">
-                        <div class="item">
-                            <input type="text" placeholder="Название фирмы">
-                        </div>
-                        <div class="item">
-                            <input type="text" placeholder="Нужное количество сотрудников">
-                        </div>
-                    </div>
-                    <div class="items clearfix last-area">
-                        <div class="item">
-                            <input type="text" placeholder="ФИО">
-                        </div>
-                        <div class="item">
-                            <input type="text" placeholder="Идентификационный номер компании">
-                        </div>
-                    </div>
-                    <div class="items clearfix last-area">
-                        <div class="item">
-                            <input type="text" placeholder="Телефон">
-                        </div>
-                        <div class="item">
-                            <input type="text" placeholder="Email">
                         </div>
                     </div>
                     <div class="pol">
                         <p>
-                            <input type="checkbox" checked>- Я выражаю свое <a href="javascript:void()">согласие на обработку указанных персональных данных</a> в целях телефонного предоставления продуктов и услуг через Restart Time Group (RTG) в соответствии с информацией в Правилах
-                            Сайта. Имею право отозвать согласие в любое время, однако без влияния на соответствие обработки, которое имело место до вывода согласие.</p>
+                            <input type="checkbox" checked>- Я выражаю свое <a href="javascript:void()">согласие на
+                                обработку указанных персональных данных</a> в целях телефонного предоставления продуктов и услуг через Restart Time Group (RTG) в соответствии с информацией в Правилах Сайта. Имею право отозвать согласие в любое время,
+                            однако без влияния на соответствие обработки, которое имело место до вывода согласие.</p>
                         <p>
                             <input type="checkbox">- Я ознакомлен, что с целью улучшения качества обслуживания все разговоры с сотрудниками компании Restart Time Group (RTG) записывается на что и даю согласие.</p>
                     </div>
@@ -771,7 +766,7 @@
                 <div class="bot-info-after">
                     <h4>Нетто<span>(Столько получет от Вас работник)</span></h4>
                     <p class="netto">15,8</p>
-                    <div>
+                    <div id="#aside" class="aside">
                         <p class="info-money">Столько Вы потратите за 1 работника с Украины. Процес поиска, набора и координация доезда с нашей стороны.
                         </p>
                         <p class="info-money">Квалифицированный работник</p>
@@ -834,8 +829,12 @@
     <script src="../js/jcf.select.min.js"></script>
     <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/rangeslider.min.js"></script>
+    <script src="../js/jquery-uiDate.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+
     <script src="../js/script.min.js"></script>
     <script src="../js/employer-calculator.min.js"></script>
+
 </body>
 
 </html>
