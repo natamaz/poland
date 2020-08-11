@@ -33,9 +33,13 @@
                     <h3>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </h3>
                 </div>
             </div>
-            <div class="video">
-                <span class="video-play" data-youtube='https://www.youtube.com/embed/7-gnx4HZ6F0'></span>
-            </div>
+        </div>
+        <div class="video" data-youtube="https://www.youtube.com/embed/7-gnx4HZ6F0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            <div class="youtube-overlay"><span class="play"></span></div>
+            <iframe class="player" src="" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
         </div>
     </section>
 
@@ -605,6 +609,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png"  class="single-img"  data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -613,6 +618,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png"  class="single-img"  data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -621,6 +627,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png"  class="single-img"  data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -629,6 +636,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png"  class="single-img"  data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -637,6 +645,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png"  class="single-img"  data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -645,6 +654,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png"  class="single-img"  data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -724,6 +734,8 @@
     <!-- /build -->
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
     <script src="../js/jquery.mask.min.js"></script>
     <script src="../js/jcf.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
@@ -731,6 +743,7 @@
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/seekers-home.min.js"></script>
+    <script>$('.single-img').fancybox({});</script>
 </body>
 
 </html>

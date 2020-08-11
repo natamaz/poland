@@ -75,7 +75,17 @@
                 </div>
                 <div class="status-time clearfix">
                     <a class="status" href="javascript:void(0)"><i class="icon-document"></i><span>Статус дела</span></a>
-                    <div class="time"><i class="icon-clock"></i>будни 08:00 - 20:00</div>
+                    <div class="time show">
+                        <i class="icon-clock"></i>будни 08:00 - 20:00
+                        <ul class="drop drop-time">
+                            <li><span><i class="icon-clock"></i><span>будни 08:00 - 20:00</span></span>
+                            </li>
+                            <li><span><i class="icon-clock"></i><span>будни 08:00 - 20:00</span></span>
+                            </li>
+                            <li><span><i class="icon-clock"></i><span>будни 08:00 - 20:00</span></span>
+                            </li>
+                        </ul>
+                    </div>
                     <a href="javascript:void(0)" class="personal-area"><i class="icon-man-user"></i></a>
                 </div>
             </div>
@@ -89,8 +99,46 @@
                         <button></button>
                     </form>
                     <ul class="tel">
-                        <li><a href="javascript:void(0)">+883510008210906</a></li>
-                        <li><a href="javascript:void(0)">+38 (067) 90 23 266</a></li>
+                        <li class="show">
+                            <a href="javascript:void(0)">+883510008210906</a>
+                            <ul class="drop">
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+883510008210906</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+883510008210906</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+883510008210906</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+883510008210906</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+883510008210906</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="show">
+                            <a href="javascript:void(0)">+38 (067) 90 23 266</a>
+                            <ul class="drop">
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+38 (067) 90 23 266</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+38 (067) 90 23 266</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+38 (067) 90 23 266</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+38 (067) 90 23 266</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../img/tel-icon2.png">+38 (067) 90 23 266</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <form class="form-mobile">
                         <input type="text" placeholder="Поиск">
@@ -166,9 +214,11 @@
                     <h3>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. </h3>
                 </div>
             </div>
-            <div class="video">
-                <span class="video-play" data-youtube='https://www.youtube.com/embed/7-gnx4HZ6F0'></span>
-            </div>
+        </div>
+        <div class="video" data-youtube="https://www.youtube.com/embed/7-gnx4HZ6F0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            <div class="youtube-overlay"><span class="play"></span></div>
+            <iframe class="player" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
         </div>
     </section>
 
@@ -666,6 +716,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png" class="single-img" data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -674,6 +725,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png" class="single-img" data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -682,6 +734,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png" class="single-img" data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -690,6 +743,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png" class="single-img" data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -698,6 +752,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png" class="single-img" data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -706,6 +761,7 @@
                     <div class="documents-item">
                         <div class="img">
                             <img src="../img/documents-item-img.png" alt="">
+                            <a href="../img/documents-item-img.png" class="single-img" data-thumbs='{"autoStart":true}'></a>
                         </div>
                         <p>Lorem Ipsum - это текст-"рыба",</p>
                     </div>
@@ -853,6 +909,8 @@
     </footer>
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
     <script src="../js/jquery.mask.min.js"></script>
     <script src="../js/jcf.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
@@ -860,6 +918,9 @@
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.min.js"></script>
     <script src="../js/seekers-home.min.js"></script>
+    <script>
+        $('.single-img').fancybox({});
+    </script>
 </body>
 
 </html>

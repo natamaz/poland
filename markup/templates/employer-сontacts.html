@@ -66,10 +66,10 @@
         </div>
     </div>
 
-    <section class="employer-сontacts">
+    <section class="employer-contacts">
         <div class="container">
             <h2>Контакты</h2>
-            <div class="сontacts-content clearfix">
+            <div class="contacts-content clearfix">
                 <div class="text">
                     <h4>Наши сотрудники всегда готовы помочь вам.</h4>
                     <p>Даже если Ваш личный менеджер в нужный момент не работает, Вы всегда можете позвонить на специальную бесплатную многоканальную линию для ротоботодателей и решить свой вопрос. Мы разговариваем с людьми на языке, который они понимают,
@@ -175,13 +175,19 @@
             </ul>
             <div class="maps-slider">
                 <div class="maps-items">
-                    <div class="maps-item" style="background: url('../img/maps-item1.png') no-repeat 50% 50%; background-size: cover;"></div>
+                    <div class="maps-item" style="background: url('../img/maps-item1.png') no-repeat 50% 50%; background-size: cover;">
+                        <a href="../img/maps-item1.png" data-fancybox="gallery" class="single-img" data-thumbs='{"autoStart":true}'></a>
+                    </div>
                 </div>
                 <div class="maps-items">
-                    <div class="maps-item" style="background: url('../img/maps-item2.png') no-repeat 50% 50%; background-size: cover;"></div>
+                    <div class="maps-item" style="background: url('../img/maps-item2.png') no-repeat 50% 50%; background-size: cover;">
+                        <a href="../img/maps-item2.png" data-fancybox="gallery" class="single-img" data-thumbs='{"autoStart":true}'></a>
+                    </div>
                 </div>
                 <div class="maps-items">
-                    <div class="maps-item" style="background: url('../img/maps-item3.png') no-repeat 50% 50%; background-size: cover;"></div>
+                    <div class="maps-item" style="background: url('../img/maps-item3.png') no-repeat 50% 50%; background-size: cover;">
+                        <a href="../img/maps-item3.png" data-fancybox="gallery" class="single-img" data-thumbs='{"autoStart":true}'></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -413,6 +419,7 @@
     </section>
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
     <script src="../js/jquery.mask.min.js"></script>
     <script src="../js/fileinput.min.js"></script>
     <script src="../js/jquery.matchHeight.min.js"></script>
@@ -420,7 +427,10 @@
     <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.min.js"></script>
-    <script src="../js/employer-сontacts.min.js"></script>
+    <script src="../js/employer-contacts.min.js"></script>
+    <script>
+        $('.single-img').fancybox({});
+    </script>
 </body>
 
 </html>

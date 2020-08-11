@@ -25,9 +25,14 @@ $(document).ready(function () {
         $('.complaints-popup').addClass('active');
     });
 
+    $('.policy').on('click', function () {
+        $('.policy-popup').addClass('active');
+    });
+
     $('.close').on('click', function () {
         $('.conditions-popup').removeClass('active');
         $('.complaints-popup').removeClass('active');
+        $('.policy-popup').removeClass('active');
         $('.video-popup').removeClass('active');
         $(".video-popup iframe").attr('src', '')
     });
@@ -36,8 +41,11 @@ $(document).ready(function () {
         $('.conditions-popup').removeClass('active');
         $('.complaints-popup').removeClass('active');
         $('.video-popup').removeClass('active');
+        $('.policy-popup').removeClass('active');
         $(".video-popup iframe").attr('src', '')
     });
+
+    
 
     // кнопка ютуб
 

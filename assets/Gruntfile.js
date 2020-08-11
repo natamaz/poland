@@ -45,7 +45,7 @@ grunt.initConfig({
 				'../markup/js/employer-delegation-services.min.js': ['dist/js/employer-delegation-services.js'],
 				'../markup/js/employer-recruitment-service.min.js': ['dist/js/employer-recruitment-service.js'],
 				'../markup/js/employer-news.min.js': ['dist/js/employer-news.js'],
-				'../markup/js/employer-сontacts.min.js': ['dist/js/employer-сontacts.js'],
+				'../markup/js/employer-contacts.min.js': ['dist/js/employer-contacts.js'],
 				'../markup/js/employer-blog.min.js': ['dist/js/employer-blog.js'],
 				'../markup/js/employer-calculator.min.js': ['dist/js/employer-calculator.js'],
 				'../markup/js/seekers-home.min.js': ['dist/js/seekers-home.js'],
@@ -124,7 +124,8 @@ grunt.initConfig({
 						header: '<%= fixturesPath %>/templates/header.html',
                     	footer: '<%= fixturesPath %>/templates/footer.html',
                     	seekers_footer: '<%= fixturesPath %>/templates/seekers-footer.html',
-                    	video_popup: '<%= fixturesPath %>/templates/video-popup.html',
+						video_popup: '<%= fixturesPath %>/templates/video-popup.html',
+						politic_popup: '<%= fixturesPath %>/templates/popup-politic.html',
 					}
                 },
             }
