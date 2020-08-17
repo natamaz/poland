@@ -224,6 +224,9 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    // focusOnSelect: true,
+    draggable: false,
+    touchMove: false,
     nextArrow: '<button class="slick-arrow next"><i class="icon-right-arrow1"></i><span>следующий отзыв</span></button>',
     prevArrow: '<button class="slick-arrow prev"><i class="icon-right-arrow1"></i><span>предыдущий отзыв</span></button>',
     responsive: [{
@@ -271,6 +274,9 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    focusOnSelect: true,
+    draggable: false,
+    touchMove: false,
     nextArrow: '<button class="slick-arrow next"><i class="icon-right-arrow1"></i><span>следующий отзыв</span></button>',
     prevArrow: '<button class="slick-arrow prev"><i class="icon-right-arrow1"></i><span>предыдущий отзыв</span></button>',
     responsive: [{
@@ -349,4 +355,10 @@ $(document).ready(function () {
     byRow: false
   });
 
+  $('.single-img').fancybox({});
+
 });
+
+
+
+  
