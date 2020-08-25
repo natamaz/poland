@@ -1,3 +1,107 @@
+.menu-mobile {
+    top: 0;
+    left: -120%;
+    z-index: 98;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    position: absolute;
+    background: #fff;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    overflow: auto;
+
+    .close-menu {
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: 9;
+
+        &::before {
+            content: '';
+            top: 22px;
+            left: 7px;
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            background: #fff;
+            -webkit-transform: rotate(50deg);
+            -moz-transform: rotate(50deg);
+            -ms-transform: rotate(50deg);
+            -o-transform: rotate(50deg);
+            transform: rotate(50deg);
+        }
+
+        &::after {
+            content: '';
+            top: 22px;
+            left: 7px;
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            background: #fff;
+            -webkit-transform: rotate(-50deg);
+            -moz-transform: rotate(-50deg);
+            -ms-transform: rotate(-50deg);
+            -o-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: auto;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 16px;
+            margin-bottom: 14px;
+            overflow: auto;
+            padding-bottom: 9px;
+
+            li {
+                margin-bottom: 2px;
+                padding-left: 79px;
+
+                a,
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 38px;
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    width: 100%;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+.menu-mobile.active {
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    background-color: #4d7fee;
+}
+
 .employer-header {
     top: 0;
     left: 0;
@@ -193,6 +297,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .menu-mobile {
+        display: none;
+    }
 
     .employer-header {
         background: #ffffff;

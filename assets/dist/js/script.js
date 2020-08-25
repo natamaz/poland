@@ -1,5 +1,48 @@
 $(document).ready(function () {
 
+    $('.top-menu, .mune-open').on('click', function () {
+        $('.menu-mobile').toggleClass('active');
+    });
+
+    $('.bottom-menu').on('click', function () {
+        $('.nav-mobile').toggleClass('active');
+    });
+
+    $('.menu-mobile .dropdown').on('click', function () {
+        $(this).toggleClass('active');
+    });
+
+    $('.menu-mobile a').on('click', function () {
+        $('.menu-mobile').removeClass('active');
+    });
+
+    $('.close-menu').on('click', function () {
+        $('.menu-mobile').removeClass('active');
+    });
+
+
+    jQuery(function ($) {
+        $(document).mouseup(function (e) {
+            var div = $(".menu-mobile");
+            if (!div.is(e.target) &&
+                div.has(e.target).length === 0) {
+                div.removeClass('active');
+            }
+        });
+    });
+    jQuery(function ($) {
+        $(document).mouseup(function (e) {
+            var div = $(".header-bottom");
+            var navMenu = $(".nav-mobile");
+            if (!div.is(e.target) &&
+                div.has(e.target).length === 0) {
+                navMenu.removeClass('active');
+            }
+        });
+    });
+
+
+
     $('.phone').mask('+7 (000) 000 00 00', {
         placeholder: "+7 (___) ___ __ __"
     });
@@ -45,7 +88,7 @@ $(document).ready(function () {
         $(".video-popup iframe").attr('src', '')
     });
 
-    
+
 
     // кнопка ютуб
 
