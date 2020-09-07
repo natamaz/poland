@@ -557,7 +557,6 @@ header{
 // внетреняя
 
 .vacancies-internal{
-    overflow: hidden;
     padding: 23px 0 0;
     .internal-content{
         margin-bottom: 34px;
@@ -961,6 +960,261 @@ header{
             }
         }
     }
+}
+
+
+
+.sms-popup{
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translate(0, -120%);
+    transition: all 1s;
+    .close{
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: absolute;
+    }
+    .sms-content{
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        z-index: 2;
+        padding: 35px 10px;
+        border-radius: 5px;
+        position: absolute;
+        text-align: center;
+        border: 1px solid #dddddd;
+        background-color: #ffffff;
+        box-shadow: 0 43px 49px rgba(67, 67, 67, 0.1);
+        transform: translate(-50%, -50%);
+        .close-popup{
+            top: 10px;
+            z-index: 3;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            position: absolute;
+            &::after{
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                background: #343434;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &::before{
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                background: #343434;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+        h3{
+            color: #343434;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            margin-bottom: 25px;
+        }
+        ul{
+            li{
+                width: 220px;
+                display: table;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0 auto 31px;
+                text-align: center;
+                border-radius: 35px;
+                padding: 10px 35px;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                &.viber{
+                    border: 1px solid #665CAC;
+                    background-color: #665CAC;
+
+                }
+                &.telegram{
+                    border: 1px solid #0088cc;
+                    background-color: #0088cc;
+
+                }
+                &.messenger{
+                    border: 1px solid #00C6FF;
+                    background-color: #00C6FF;
+
+                }
+                &.call{
+                    border: 1px solid #9cd47b;
+                    background-color: #9cd47b;
+
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-align: left;
+                    padding: 0 20px 0 25px;
+                    position: relative;
+                    color: #fff;
+                    i{
+                        &:before{
+                            left: 0;
+                            position: absolute;
+                            color: #fff;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sms-popup.active{
+    transform: translate(0, 0);
+}
+
+.massage-popup{
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translate(0, -120%);
+    transition: all 1s;
+    .close{
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: absolute;
+    }
+    .massage-content{
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        z-index: 2;
+        padding: 35px 10px;
+        border-radius: 5px;
+        position: absolute;
+        text-align: center;
+        border: 1px solid #dddddd;
+        background-color: #ffffff;
+        box-shadow: 0 43px 49px rgba(67, 67, 67, 0.1);
+        transform: translate(-50%, -50%);
+        .close-popup{
+            top: 10px;
+            z-index: 3;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            position: absolute;
+            &::after{
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                background: #343434;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &::before{
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                background: #343434;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+        h3{
+            color: #343434;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            margin-bottom: 25px;
+        }
+        ul{
+            li{
+                width: 220px;
+                display: table;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0 auto 31px;
+                text-align: center;
+                border-radius: 35px;
+                padding: 10px 35px;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+                &.vk{
+                    border: 1px solid #597da3;
+                    background-color: #597da3;
+
+                }
+                &.telegram{
+                    border: 1px solid #0088cc;
+                    background-color: #0088cc;
+
+                }
+                &.fb{
+                    border: 1px solid #3b5998;
+                    background-color: #3b5998;
+
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-align: left;
+                    padding: 0 20px 0 25px;
+                    position: relative;
+                    color: #fff;
+                    i{
+                        &:before{
+                            left: 0;
+                            position: absolute;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.massage-popup.active{
+    transform: translate(0, 0);
 }
 
 @media screen and (min-width: 768px) {
